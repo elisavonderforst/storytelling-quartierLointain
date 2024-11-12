@@ -30,3 +30,40 @@ header {
   background-size: cover;
   height: 1650px;
 }
+
+h1 {
+  color: var(--black, #000);
+  font-family: "Instrument Serif";
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+h2 {
+  color: var(--black, #000);
+  font-family: "Instrument Serif";
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 86px;
+}
+
+h3 {
+  color: var(--black, #000);
+  font-family: "Instrument Serif";
+  font-size: 24px;
+  margin-bottom: 11px;
+}
+
+
+// .row + .row {
+//   margin-top: 16px;
+// }
+
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }

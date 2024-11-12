@@ -1,0 +1,46 @@
+.shop {
+  background: var(--Color-vert-gris, #e6edea);
+}
+
+.shop-book-img {
+  width: 110%;
+  margin-top: -90px;
+  margin-left: -90px;
+}
+
+.shop-text-information {
+  color: var(--black, #000);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.shop-feature > .shop-text-information {
+  margin-top: 6px;
+}
+
+.shop-feature {
+  margin-bottom: 36px;
+  margin-top: 26px;
+}
+
+.shop-resume {
+  margin-top: 15px;
+}
+
+.shop-btn > a {
+  font-family: instrument-serif, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.shop-btn {
+  height: 55px;
+  padding: 14px 36px;
+  border: 2px solid var(--black, #000);
+  background: var(--white, #fff);
+  margin-top: 20px;
+  margin-bottom: 136px;
+}
