@@ -1,0 +1,23 @@
+.header-title-img {
+  width: 60%;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: titleDisappear;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes titleDisappear {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
