@@ -15,10 +15,18 @@ video {
 
 body {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
+  width: 100%;
+  height: 100%;
   background: white;
   position: absolute;
+}
+
+.chose {
+  background-image: url(../img/choise-moon.png);
+  background-size: cover;
+  height: 1650px;
 }
