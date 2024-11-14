@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: inherit;
 }
@@ -23,7 +27,6 @@ header {
   height: 100%;
   background: white;
   position: absolute;
-  overflow-y: hidden;
 }
 
 .chose {
