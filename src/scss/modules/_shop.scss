@@ -2,9 +2,35 @@
   background: var(--Color-vert-gris, #e6edea);
 }
 
+.shop-img-books {
+  position: relative;
+}
+
+.shop-img-books img {
+  transition: opacity 0.3s ease-in-out;
+}
+
 .shop-book-img {
   width: 110%;
   margin-top: -90px;
+  margin-left: -90px;
+}
+
+.shop-book-open {
+  opacity: 0;
+}
+
+.shop-img-books:hover img.shop-book-img {
+  opacity: 0;
+}
+
+.shop-img-books:hover img.shop-book-open {
+  opacity: 1;
+}
+
+.shop-book-open {
+  width: 100%;
+  margin-top: -750px;
   margin-left: -90px;
 }
 

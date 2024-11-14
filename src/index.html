@@ -14,68 +14,143 @@
         <img src="img/title-transparent.png" alt="" class="header-title-img" />
       </div>
       <div class="header-butterfly">
-        <img src="img/papillon.png" alt="" class="header-butterfly-img" />
+        <img
+          src="img/papillon.png"
+          alt=""
+          class="header-butterfly-img"
+          id="butterfly"
+        />
       </div>
     </header>
-    <main>
+    <main class="is-hidden" id="footer-back-header">
       <section>
-        <div class="introduction">
-          <div class="img-lefttoright">
-            <img src="#" alt="" class="train" />
+        <div class="intro">
+          <div class="intro-scroll-butterfly">
+            <div class="intro-butterfly">
+              <img src="img/papillon.png" alt="" class="header-butterfly-img" />
+            </div>
           </div>
-          <div class="img-rightoleft"></div>
+          <div class="intro-img-rightoleft">
+            <img src="img/view-village.png" alt="" class="intro-view" />
+            <img src="img/hiroshi.png" alt="" class="intro-hiroshi" />
+          </div>
+          <div class="intro-img-lefttoright">
+            <img src="img/train.png" alt="" class="intro-train" />
+          </div>
         </div>
         <div class="chose">
           <div class="chose-btn-pack">
-            <button class="chose-btn chose-btn-past">
+            <button id="js-btn-past" class="chose-btn chose-btn-past">
               <a>Explorer le passé</a>
             </button>
-            <button class="chose-btn chose-btn-present">
-              <a>Rester dans le passé</a>
+            <button id="js-btn-present" class="chose-btn chose-btn-present">
+              <a>Rester dans le présent</a>
             </button>
           </div>
-          <video class="chose-video" src="#"></video>
+          <div class="chose-video-appear">
+            <video class="chose-video" src="#"></video>
+          </div>
         </div>
-        <section class="past">
-          <div class="passe-img-appear">
-            <div class="scroll-1">
-              <img src="#" alt="" />
+        <section class="past is-none">
+          <div class="past-img-appear">
+            <div class="past-scroll-1 past-is-hidden">
+              <img
+                src="img/village-past.png"
+                alt=""
+                class="past-img past-img-village"
+              />
             </div>
-            <div class="scroll-2">
-              <img src="#" alt="" />
-            </div>
-            <div class="scroll-3">
-              <img src="#" alt="" />
-            </div>
-            <div class="scroll-4">
-              <img src="#" alt="" />
-            </div>
-            <div class="scroll-5">
-              <img src="#" alt="" />
-            </div>
-            <div class="scroll-6">
-              <img src="#" alt="" />
-            </div>
-            <div class="scroll-7">
-              <img src="#" alt="" />
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="past-scroll-2 past-is-hidden">
+                    <img
+                      src="img/past-hande.png"
+                      alt=""
+                      class="past-img past-hande"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="past-scroll-3 past-is-hidden">
+                    <img
+                      src="img/young-hiroshi-past.png"
+                      alt=""
+                      class="past-img past-young-hiroshi"
+                    />
+                  </div>
+                </div>
+                <div class="col-10 offset-1">
+                  <div class="past-scroll-4 past-is-hidden">
+                    <img
+                      src="img/family-diner-past.png"
+                      alt=""
+                      class="past-img"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="past-scroll-5 past-is-hidden">
+                    <img
+                      src="img/class-photo-past.png"
+                      alt=""
+                      class="past-img"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="past-scroll-6 past-is-hidden">
+                    <img src="img/mountain-past.png" alt="" class="past-img" />
+                  </div>
+                  <div class="past-scroll-7 past-is-hidden">
+                    <img src="img/school-passt.png" alt="" class="past-img" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="quote">
-            <p>«Ne t’attriste pas du passé, le présent t’attend»</p>
-            <p class="autor-quote">-Jirô Taniguchi</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-10 offset-1">
+                <div class="quote">
+                  <p>«Ne t’attriste pas du passé, le présent t’attend»</p>
+                  <p class="autor-quote">-Jirô Taniguchi</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button>revenir au présent</button>
+          <div class="past-btn-pack">
+            <button id="js-btn-choise-past" class="past-btn js-btn-choise">
+              <a>Revenir au présent</a>
+            </button>
+          </div>
         </section>
-        <section class="present">
-          <img src="img/family-diner-present.png" alt="" />
-          <div class="quote">
-            <p>
-              « On ne guérit d’une souffrance qu’à condition de l’éprouver
-              pleinement »
-            </p>
-            <p class="autor-quote">-Marcel Proust</p>
+        <section class="present is-none">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="img/family-diner-present.png"
+                  alt=""
+                  class="present-img present-img-hidden"
+                />
+              </div>
+              <div class="col-10 offset-1">
+                <div class="quote">
+                  <p>
+                    « On ne guérit d’une souffrance qu’à condition de l’éprouver
+                    pleinement »
+                  </p>
+                  <p class="autor-quote">-Marcel Proust</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button>revenir au présent</button>
+          <div class="past-btn-pack">
+            <button id="js-btn-choise-present" class="past-btn">
+              <a> Revenir au présent</a>
+            </button>
+          </div>
         </section>
         <div class="shop">
           <div class="container">
@@ -89,7 +164,10 @@
             </div>
             <div class="row">
               <div class="col-lg-7 col-12">
-                <img src="img/book.png" alt="" class="shop-book-img" />
+                <div class="shop-img-books">
+                  <img src="img/book.png" alt="" class="shop-book-img" />
+                  <img src="img/book-open.png" class="shop-book-open" />
+                </div>
               </div>
               <div class="col-lg-4 col-12">
                 <div class="shop-resume">
@@ -128,10 +206,16 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-img">
-        <img src="img/title-transparent.png" alt="" class="footer-img-title" />
-      </div>
+    <footer class="is-hidden">
+      <a href="#">
+        <div class="footer-img">
+          <img
+            src="img/title-transparent.png"
+            alt=""
+            class="footer-img-title"
+          />
+        </div>
+      </a>
       <div class="footer-text">
         <p>
           @2024, Maria del Mar Machado, Matilde Ribeiro & Elisa von der Forst

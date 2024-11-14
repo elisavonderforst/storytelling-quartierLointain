@@ -1,3 +1,22 @@
-.present {
-  display: none;
+.present-img {
+  width: 80%;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.past-btn > a {
+  font-family: instrument-serif, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 14px 36px;
+}
+
+.past-btn {
+  padding: 14px 36px;
+
+  border: 1px solid var(--black, #000);
+  background: var(--white, #ffffffd1);
+  margin-bottom: 120px;
 }
