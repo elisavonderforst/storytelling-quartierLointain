@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -16,6 +15,10 @@ a {
 img,
 video {
   display: block;
+}
+
+a {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +65,10 @@ h3 {
 
 footer {
   background: var(--Color-3-vert-footer, #bad6ca);
+}
+
+button a {
+  cursor: pointer;
 }
 
 // .row + .row {
