@@ -52,7 +52,7 @@ const btnChoisePast = document.querySelector("#js-btn-choise-past");
 
 var storyBefore = document.querySelector(".past");
 var storyNow = document.querySelector(".present");
-var choise = document.querySelector(".chose");
+var choise = document.querySelector(".choose");
 
 btnBefore.addEventListener("click", function () {
   storyBefore.classList.remove("is-none");
@@ -70,17 +70,17 @@ btnNow.addEventListener("click", function () {
 btnChoisePresent.addEventListener("click", function () {
   storyNow.classList.add("is-none");
   storyBefore.classList.add("is-none");
-  gsap.to(window, { scrollTo: ".chose" });
+  gsap.to(window, { scrollTo: ".choose" });
 });
 
 btnChoisePast.addEventListener("click", function () {
   storyNow.classList.add("is-none");
   storyBefore.classList.add("is-none");
-  gsap.to(window, { scrollTo: ".chose" });
+  gsap.to(window, { scrollTo: ".choose" });
 });
 
-const videoAppear = document.querySelector(".chose-video");
-const btnchoise = document.querySelector(".chose-btn-pack");
+const videoAppear = document.querySelector(".choose-video");
+const btnchoise = document.querySelector(".btn-choose-pack");
 
 gsap.to(videoAppear, {
   scrollTrigger: {

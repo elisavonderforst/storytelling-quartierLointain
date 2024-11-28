@@ -1,41 +1,15 @@
-.chose {
+.choose {
   position: relative;
+  height: 1650px;
 }
 
-.chose-btn-pack {
-  text-align: center;
-  position: absolute;
-  left: 29%;
-}
-
-.chose-btn {
-  height: 55px;
-  padding: 14px 36px;
-  border: 1px solid var(--black, #000);
-  background: var(--white, #ffffffd1);
-  margin-top: 450px;
-}
-
-.chose-btn-past {
-  margin-right: 305px;
-}
-
-.chose-btn > a {
-  font-family: instrument-serif, sans-serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.chose-video {
+.choose-video {
   margin: auto;
-  width: 673.832px;
+  width: 674px;
   height: 424px;
   background: rgb(74, 124, 86);
-  opacity: 0;
 }
 
-.chose-video-appear {
+.choose-video-appear {
   padding-top: 800px;
 }
