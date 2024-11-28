@@ -30,6 +30,7 @@ tl.to(butterfly, { scale: 1, duration: 0.2 });
 tl.to(butterfly, { x: "200vh", y: -300 });
 tl.to(titleheader, {
   opacity: 0,
+  x: "100vw",
 });
 
 ScrollTrigger.addEventListener(
