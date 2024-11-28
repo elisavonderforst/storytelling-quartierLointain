@@ -1,6 +1,11 @@
+.chose {
+  position: relative;
+}
+
 .chose-btn-pack {
   text-align: center;
-  margin-bottom: 600px;
+  position: absolute;
+  left: 29%;
 }
 
 .chose-btn {
@@ -29,4 +34,8 @@
   height: 424px;
   background: rgb(74, 124, 86);
   opacity: 0;
+}
+
+.chose-video-appear {
+  padding-top: 800px;
 }

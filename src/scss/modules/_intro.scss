@@ -1,22 +1,49 @@
 .intro {
-  height: 100vh;
+  position: relative;
+  height: 150vh;
+  overflow-y: scroll;
 }
 
-.intro-train {
-  width: 80%;
-}
-
-.intro-img-rightoleft > img {
-  width: 50%;
-}
-
-.intro-butterfly > .header-butterfly-img {
-  width: 5.5%;
-  margin: 19px 57px;
+.intro-scroll-butterfly {
+  position: absolute;
+  top: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .intro-img-rightoleft {
   display: flex;
+  z-index: 0;
+  top: 150px;
+  right: -150%;
+}
+
+.intro-img-rightoleft img {
+  width: 20%;
   margin: 20px;
-  margin-bottom: 100px;
+}
+
+.intro-fixed-img-butterfly {
+  position: fixed; /* Rendre l'image fixe */
+  top: 80px; /* Positionner à 20 pixels du haut */
+  left: -10px; /* Centrer horizontalement */
+  z-index: 11;
+}
+
+.intro-fixed-img {
+  position: fixed; /* Rendre l'image fixe */
+  top: 150px; /* Positionner à 20 pixels du haut */
+  left: 100vw; /* Centrer horizontalement */
+  z-index: 10; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+}
+
+.intro-fixed-img-train {
+  position: fixed; /* Rendre l'image fixe */
+  top: 50%; /* Positionner à 20 pixels du haut */
+  left: -70%; /* Centrer horizontalement */
+  z-index: 10; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+}
+
+.intro-train {
+  width: 50%;
 }

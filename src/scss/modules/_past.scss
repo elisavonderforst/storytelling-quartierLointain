@@ -31,6 +31,7 @@
   border: 1px solid var(--black, #000);
   background: var(--white, #ffffffd1);
   margin-bottom: 120px;
+  position: relative;
 }
 
 .past-img {
@@ -51,4 +52,8 @@
 .past-btn-pack {
   display: flex;
   justify-content: center;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  bottom: 1300px;
 }

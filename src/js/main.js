@@ -27,19 +27,11 @@ tl.to(butterfly, { scale: 1.2, duration: 0.2 });
 tl.to(butterfly, { scale: 1, duration: 0.2 });
 tl.to(butterfly, { scale: 1.2, duration: 0.2 });
 tl.to(butterfly, { scale: 1, duration: 0.2 });
-tl.pause;
-butterfly.addEventListener("click", function () {
-  tl.resume();
-  tl.to(butterfly, { x: "200vh", y: -300 });
-  tl.to(titleheader, {
-    x: "100%",
-    opacity: 0,
-    duration: 0.3,
-    ease: "expo.out",
-  });
+tl.to(butterfly, { x: "200vh", y: -300 });
+tl.to(titleheader, {
+  opacity: 0,
 });
 
-// when calculating pinning which involves sizing, make sure the scrollbar is factored in
 ScrollTrigger.addEventListener(
   "refreshInit",
   () => (document.body.style.overflowY = "auto")
@@ -98,4 +90,39 @@ gsap.to(videoAppear, {
   opacity: 1,
   duration: 2,
   delay: 8,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".intro-fixed-img", {
+    scrollTrigger: {
+      trigger: ".intro",
+      start: "top top",
+      end: "+=600",
+      scrub: true,
+    },
+    x: "-200vw",
+  });
+
+  gsap.to(".intro-fixed-img-train", {
+    scrollTrigger: {
+      trigger: ".intro",
+      start: "top top",
+      end: "+=600",
+      scrub: true,
+    },
+    x: "210vw",
+    duration: 3,
+  });
+
+  gsap.to(".intro-fixed-img-butterfly", {
+    scrollTrigger: {
+      trigger: ".intro",
+      start: "top top",
+      end: "+=600",
+      scrub: true,
+    },
+    x: "90vw",
+  });
 });
