@@ -1,8 +1,10 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 import { ScrollToPlugin } from "gsap/all";
-
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin("ScrollTo");
+
+/* animation du titre */
 
 const titleheader = document.querySelector("header");
 const titleImg = document.querySelector(".header-title");
@@ -43,12 +45,14 @@ ScrollTrigger.addEventListener("refresh", () => {
   }
 });
 
-gsap.registerPlugin("ScrollTo");
+/* Btn pour les choix */
 
 const btnBefore = document.querySelector("#js-btn-past");
 const btnNow = document.querySelector("#js-btn-present");
 const btnChoisePresent = document.querySelector("#js-btn-choise-present");
 const btnChoisePast = document.querySelector("#js-btn-choise-past");
+const videoAppear = document.querySelector(".choose-video");
+const btnchoise = document.querySelector(".btn-choose-pack");
 
 var storyBefore = document.querySelector(".past");
 var storyNow = document.querySelector(".present");
@@ -79,19 +83,7 @@ btnChoisePast.addEventListener("click", function () {
   gsap.to(window, { scrollTo: ".choose" });
 });
 
-const videoAppear = document.querySelector(".choose-video");
-const btnchoise = document.querySelector(".btn-choose-pack");
-
-gsap.to(videoAppear, {
-  scrollTrigger: {
-    trigger: btnchoise,
-    markers: true,
-    start: "bottom bottom",
-  },
-  opacity: 1,
-  duration: 2,
-  delay: 8,
-});
+/* Paralaxe des images avec le train */
 
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -124,6 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "+=600",
       scrub: true,
     },
-    x: "90vw",
+    x: "80vw",
   });
 });

@@ -36,7 +36,6 @@ header {
 .choose {
   background-image: url(../img/choise-moon.png);
   background-size: cover;
-  height: 1650px;
 }
 
 h1 {
@@ -67,14 +66,3 @@ footer {
   background: var(--Color-3-vert-footer, #bad6ca);
 }
 
-// .row + .row {
-//   margin-top: 16px;
-// }
-
-// .row > .col,
-// .row > [class^="col-"] {
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-//   background-color: rgba(86, 61, 124, 0.15);
-//   border: 1px solid rgba(86, 61, 124, 0.2);
-// }
